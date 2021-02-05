@@ -1,0 +1,84 @@
+body {
+  margin: 0;
+  font-family: 'Khula', sans-serif;
+  font-size: 1.125rem;
+  color: grey;
+  background: url("../img/team-wallpaper.jpg");
+  background-size: cover;
+
+}
+
+h1 {
+  font-size: calc(4rem + 3vw);
+  font-weight: bold;
+  color: white;
+  text-shadow: 10px 10px 15px rgba(0, 0, .5);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+h2 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: white;
+  letter-spacing: 10px;
+  text-transform: uppercase;
+}
+
+h3 {
+  font-size: 1rem;
+  font-weight: 100;
+  color: grey;
+  font-style: italic;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto 1fr 1fr 3fr 1fr 1fr;
+  grid-gap: 1em;
+  width: 80%;
+  margin: 0 auto 100px;
+}
+
+@media (min-width: 52em) {
+  .container {
+    grid-template-columns: repeat(auto-fit, minmax(15em, 1fr));
+  }
+}
+
+.title {
+  grid-column: span 2;
+}
+
+
+.team-member {
+  border: 12px solid #968c83;
+  background-color: #03506f;
+  text-align: center;
+  box-shadow: 0 0 10px black;
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+}
+
+.member-1 {
+ grid-row-start: 3;
+ grid-column-start: 1;
+ grid-row-end: 6;
+}
+
+.member-2 {
+  grid-row-start: 2;
+  grid-column-start: 2;
+  grid-row-end: 5;
+}
+
+.member-3 {
+  grid-row-start: 4;
+  grid-column-start: 3;
+  grid-row-end: 7;
+}
